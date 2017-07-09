@@ -19,67 +19,62 @@
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#"><p><b>NEXTIVI</b></p></a>
 				</div>
-				<p id="title">Merchandise Product Upload</p>
+				<p id="title">Merchandise Product textUpload</p>
 		    </div>
 		</nav>
 
 		<div class="container-fluid">
 			<form action="upload.php" method="post" enctype="multipart/form-data">
-			<div class="content">
-			<h1>Company Name</h1>
-			
-						<div class="form-group">
-							<label>HTML Body:</label>
-							 <textarea id="htmlbody" name="htmlbody" class="form-control" rows="8"></textarea>
-						</div>
-						<div class="form-group">
-							<label for="sel1">Category:</label>
-							<select class="form-control" id="category" name="category">
-								<option value="id">Music Track</option>
-								<option>Merchandise</option>
-								<option>Subscription</option>
-								<option>Video Clip</option>
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label for="sel1">Show:</label>
-							<select class="form-control" id="category" name="category">
-								<option value="id">Music Track</option>
-								<option>Merchandise</option>
-								<option>Subscription</option>
-								<option>Video Clip</option>
-							</select>
-						</div>
-						
+				<div class="content">
+					<h1>Company Name</h1>
+				
+					<div class="form-group">
+						<label>HTML Body</label>
+						 <textarea id="htmlbody" name="htmlbody" class="form-control" rows="6"></textarea>
 					</div>
-					<br>
-					<div class="content">
-						<label>Choose image to upload:</label>
-			            <div class="input-group image-preview">
-			                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
-			                <span class="input-group-btn">
-			                    <!-- image-preview-clear button -->
-			                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-			                        <span class="glyphicon glyphicon-remove"></span> Clear
-			                    </button>
-			                    <!-- image-preview-input -->
-			                    <div class="btn btn-default image-preview-input">
-			                        <span class="glyphicon glyphicon-folder-open"></span>
-			                        <span class="image-preview-input-title">Browse</span>
-			                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
-			                    </div>
-			                </span>
-			            </div>
-			        </div>
 
-			</div>
-			<br>
-			<center><button type="submit" class="btn">Upload Product</button></center>
+					<div class="form-group">
+						<label for="sel1">Category</label>
+						<select class="form-control" id="category" name="category">
+							<option value="id">Music Track</option>
+							<option>Merchandise</option>
+							<option>Subscription</option>
+							<option>Video Clip</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="sel1">Show</label>
+						<select class="form-control" id="category" name="category">
+							<option value="id">Music Track</option>
+							<option>Merchandise</option>
+							<option>Subscription</option>
+							<option>Video Clip</option>
+						</select>
+					</div>
+							
+				</div>
+				<br>
+				<div class="content">
+					<div class="form-group" id="imageupload">
+						<label>Upload Image</label>
+						<div class="input-group">
+							<span class="input-group-btn">
+								<span class="btn btn-default btn-file">
+									<span class="glyphicon glyphicon-folder-open"></span>
+									Browse… <input type="file" id="imgInp">
+								</span>
+							</span>
+							<input type="text" class="form-control" readonly>
+						</div>
+						<img id='img-upload'/>
+					</div>
+				</div>
+
+				<br>
+
+				<center><button type="submit" class="btn" style="margin-bottom: 20pxtext">Upload Product</button></center>
 			</form>
 		</div>
-
-            
-
 	</body>
 </html>
