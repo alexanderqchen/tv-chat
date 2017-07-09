@@ -24,7 +24,7 @@
 		</nav>
 
 		<div class="container-fluid">
-			<form action="upload.php" method="post" enctype="multipart/form-data">
+			<form action="http://54.68.17.3/nextivi/api/mc-set.php" method="GET" enctype="multipart/form-data">
 				<div class="content">
 					<h1>NBC</h1>
 				
@@ -45,11 +45,11 @@
 
 					<div class="form-group">
 						<label for="sel1">Show</label>
-						<select class="form-control" id="category" name="category">
-							<option value="id">Days of our Lives</option>
-							<option>Today</option>
-							<option>Dateline</option>
-							<option>The Tonight Show Starring Jimmy Fallon</option>
+						<select class="form-control" id="sid" name="sid">
+							<option value="0">Days of our Lives</option>
+							<option value="1">Today</option>
+							<option value="2">Dateline</option>
+							<option value="3">The Tonight Show Starring Jimmy Fallon</option>
 						</select>
 					</div>
 							

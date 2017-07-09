@@ -13,7 +13,7 @@ ul{
 	padding: 0;
 }
 label{
-	color: #5792c4;
+	color: #de1b1a;
 }
 .content{
 	width: 80%;
@@ -24,7 +24,7 @@ label{
 
 /* navbar */
 .navbar{
-	background: #88d1b1;
+	background: #ae1f1f;
 }
 .navbar #title{
 	color: white;
@@ -33,7 +33,7 @@ label{
 	margin-left: 25px;
 }
 .navbar-brand{
-	background: #63b08f;
+	background: #de1b1a;
 }
 .navbar-brand p{
 	font-size: 40px;
@@ -42,7 +42,7 @@ label{
 
 /* form */
 .btn{
-	background: #88d1b1;
+	background: #de1b1a;
 	color: white;
 	width: 200px;
 }
