@@ -40,8 +40,7 @@ $(function() {
     $(".image-preview-input input:file").change(function (){     
         var img = $('<img/>', {
             id: 'dynamic',
-            width:250,
-            height:200
+            width:250
         });      
         var file = this.files[0];
         var reader = new FileReader();
