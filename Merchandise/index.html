@@ -3,42 +3,72 @@
 	<head>
 		<title>TV Chat Advertising</title>
 		<link rel="stylesheet" href="../style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+<<<<<<< HEAD
 		<header>
 			<div class="container">
 				<div id="logo">
 					<h1>CHATIVI</h1>
 				</div>
-					<nav>
-						<ul>
-							<li>Order</li>
-							<li>About</li>
-						</ul>
-					</nav>
-				</li>
-			</li>
+			</div>
+=======
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">WebSiteName</a>
+>>>>>>> 38a3346151d5bc53ae34c3c4b12f8c59939a3e38
+				</div>
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
+				<li><a href="#">Page 2</a></li>
+				<li><a href="#">Page 3</a></li>
+		    	</ul>
+		    </div>
+		</nav>
 		</header>
 
-		<section id="description">
-			<div class="container">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</section>
-
-		<section id="orderform">
-			<div class="container">
-				<div class="container">
-					<h1>Order Now</h1>
-					<form>
-						Company:<br>
-						<input type="text"><br><br>
-						TV Show:<br>
-						<input type="text"><br><br>
-						Description:<br>
-						<textarea name="Text1" cols="40" rows="5"></textarea><br><br>
-						<input type="submit" value="Submit">
-					</form>
+		<div class="container-fluid content">
+			<h1>Company Name</h1>
+			<form>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="form-group">
+							<label>Product Name:</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Description:</label>
+							<textarea class="form-control" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Link:</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="sel1">Select list:</label>
+							<select class="form-control" id="sel1">
+								<option>Music Track</option>
+								<option>Merchandise</option>
+								<option>Subscription</option>
+								<option>Video Clip</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+					<div class="col-md-4">
+						<img src="#">
+						<button class="btn btn-default">Upload</button>
+					</div>
 				</div>
 				<div class="container">
 				<form action="upload.php" method="post" enctype="multipart/form-data">
@@ -49,6 +79,8 @@
 				</div>
 			</div>
 		</section>
+			</form>
+		</div>
 
 	</body>
 </html>
