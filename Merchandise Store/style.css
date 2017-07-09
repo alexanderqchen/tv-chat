@@ -11,3 +11,12 @@ img{
 	margin:10px;
 	width: 90%;
 }
+a{
+	text-decoration: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
